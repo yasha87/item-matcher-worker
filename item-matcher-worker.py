@@ -45,7 +45,7 @@ class ConfigCacheHandler(ConfigCacheHandlerBase.ConfigCacheHandlerBase):
 
 class MatchingExecutor:
     def __init__(self):
-        self.configCacheHandler = ConfigCacheHandler("template_merging_test")
+        self.configCacheHandler = ConfigCacheHandler("template_merging")
         self.configCacheHandler.getTemplateMergerConfig()
         self.logger = Logger.Logger(self.configCacheHandler.getMessageBrokerUrl()
                                     ,self.configCacheHandler.getMessageBrokerPort()
